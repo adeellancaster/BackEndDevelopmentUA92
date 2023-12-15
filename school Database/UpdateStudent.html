@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ST Alphonsus Primary School</title>
+</head>
+<body>
+    <form action="InsertStudent.php" method="post">
+        <label for="studentID">Student ID:</label>
+        <input type="number" name="studentID" required pattern="[0-9]+" title="Enter numbers only"><br>
+
+        <label for="Name"> Name:</label>
+        <input type="text" name="Name" required pattern="[A-za-z]+" title="Please enter letters only"><br>
+
+        <label for="DateOfBirth">DateOfBirth:</label>
+        <input type="date" name="DateOfBirth"><br> 
+
+        <button type="submit">Update Student</button>
+    </form>
+</body>
+</html>
